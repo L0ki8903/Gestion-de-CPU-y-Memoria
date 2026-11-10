@@ -1,0 +1,38 @@
+=== LOG DE TRANSICIONES: Round Robin (Q=2) (Escenario 2: Carga Mixta (Efecto Convoy)) ===
+Costo de cambio de contexto: 1 ticks | Tiempo total: 35 ticks
+
+[t=000] PID 1 (P1): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=000] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=001] PID 2 (P2): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=002] PID 1 (P1): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=2)
+[t=002] PID 3 (P3): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=003] PID 2 (P2): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=003] PID 4 (P4): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=004] PID 5 (P5): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=005] PID 2 (P2): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=006] PID 3 (P3): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=008] PID 3 (P3): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=2)
+[t=009] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=011] PID 1 (P1): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=2)
+[t=012] PID 4 (P4): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=013] PID 4 (P4): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=014] PID 5 (P5): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=016] PID 5 (P5): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=017] PID 3 (P3): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=018] PID 3 (P3): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=019] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=021] PID 1 (P1): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=2)
+[t=021] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=023] PID 1 (P1): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=2)
+[t=023] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=025] PID 1 (P1): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=2)
+[t=025] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=027] PID 1 (P1): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=2)
+[t=027] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=029] PID 1 (P1): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=2)
+[t=029] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=031] PID 1 (P1): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=2)
+[t=031] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=033] PID 1 (P1): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=2)
+[t=033] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=035] PID 1 (P1): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas

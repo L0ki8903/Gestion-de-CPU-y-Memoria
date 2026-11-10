@@ -1,0 +1,27 @@
+=== LOG DE TRANSICIONES: FCFS (Escenario 3 (Costo CS=0 Ideal)) ===
+Costo de cambio de contexto: 0 ticks | Tiempo total: 50 ticks
+
+[t=000] PID 1 (P1): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=000] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=001] PID 2 (P2): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=002] PID 3 (P3): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=003] PID 4 (P4): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=005] PID 5 (P5): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=006] PID 6 (P6): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=008] PID 1 (P1): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=008] PID 7 (P7): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=008] PID 2 (P2): LISTO -> EJECUCION | Motivo: CPU asignada (cambio instantáneo)
+[t=009] PID 8 (P8): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=012] PID 2 (P2): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=012] PID 3 (P3): LISTO -> EJECUCION | Motivo: CPU asignada (cambio instantáneo)
+[t=024] PID 3 (P3): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=024] PID 4 (P4): LISTO -> EJECUCION | Motivo: CPU asignada (cambio instantáneo)
+[t=027] PID 4 (P4): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=027] PID 5 (P5): LISTO -> EJECUCION | Motivo: CPU asignada (cambio instantáneo)
+[t=033] PID 5 (P5): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=033] PID 6 (P6): LISTO -> EJECUCION | Motivo: CPU asignada (cambio instantáneo)
+[t=035] PID 6 (P6): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=035] PID 7 (P7): LISTO -> EJECUCION | Motivo: CPU asignada (cambio instantáneo)
+[t=045] PID 7 (P7): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=045] PID 8 (P8): LISTO -> EJECUCION | Motivo: CPU asignada (cambio instantáneo)
+[t=050] PID 8 (P8): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas

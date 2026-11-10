@@ -1,0 +1,13 @@
+PID,Nombre,Llegada,CPU_Total,IO_Total,Inicio_CPU,Fin,TAT,WT,RT,CS,Ratio_WT_CPU,Algoritmo
+1,P1,0,5,2,0,18,18,11,0,1,2.2,FCFS
+2,P2,1,4,0,4,8,7,3,3,1,0.75,FCFS
+3,P3,2,4,1,9,21,19,14,7,2,3.5,FCFS
+4,P4,4,3,0,12,15,11,8,8,1,2.67,FCFS
+1,P1,0,5,2,0,9,9,2,0,1,0.4,SJF (No Expropiativo)
+2,P2,1,4,0,17,21,20,16,16,1,4.0,SJF (No Expropiativo)
+3,P3,2,4,1,4,12,10,5,2,2,1.25,SJF (No Expropiativo)
+4,P4,4,3,0,13,16,12,9,9,1,3.0,SJF (No Expropiativo)
+1,P1,0,5,2,0,17,17,10,0,1,2.0,Round Robin (Q=3)
+2,P2,1,4,0,4,19,18,14,3,2,3.5,Round Robin (Q=3)
+3,P3,2,4,1,8,22,20,15,6,2,3.75,Round Robin (Q=3)
+4,P4,4,3,0,11,14,10,7,7,1,2.33,Round Robin (Q=3)

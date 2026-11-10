@@ -1,0 +1,31 @@
+=== REGISTRO DE TRADUCCIÓN MMU (4 PASOS): LRU (Escenario 2 (Carga Mixta - Efecto Convoy)) ===
+RAM: 16384 B (4 marcos de 4096 B) | Reemplazo: LRU
+
+[t=000] PID 1 (P1) | Dir.Virtual=28736 -> Paso 1: Pag=7 | Paso 2: Offset=0064 | Paso 3: Marco=0 (FALLO) | Paso 4: Dir.Fisica=00064
+[t=001] PID 1 (P1) | Dir.Virtual=00064 -> Paso 1: Pag=0 | Paso 2: Offset=0064 | Paso 3: Marco=1 (FALLO) | Paso 4: Dir.Fisica=04160
+[t=002] PID 1 (P1) | Dir.Virtual=04160 -> Paso 1: Pag=1 | Paso 2: Offset=0064 | Paso 3: Marco=2 (FALLO) | Paso 4: Dir.Fisica=08256
+[t=003] PID 1 (P1) | Dir.Virtual=08256 -> Paso 1: Pag=2 | Paso 2: Offset=0064 | Paso 3: Marco=3 (FALLO) | Paso 4: Dir.Fisica=12352
+[t=004] PID 1 (P1) | Dir.Virtual=00064 -> Paso 1: Pag=0 | Paso 2: Offset=0064 | Paso 3: Marco=1 (ACIERTO) | Paso 4: Dir.Fisica=04160
+[t=005] PID 1 (P1) | Dir.Virtual=12352 -> Paso 1: Pag=3 | Paso 2: Offset=0064 | Paso 3: Marco=0 (FALLO) | Paso 4: Dir.Fisica=00064
+[t=006] PID 1 (P1) | Dir.Virtual=00064 -> Paso 1: Pag=0 | Paso 2: Offset=0064 | Paso 3: Marco=1 (ACIERTO) | Paso 4: Dir.Fisica=04160
+[t=007] PID 1 (P1) | Dir.Virtual=16448 -> Paso 1: Pag=4 | Paso 2: Offset=0064 | Paso 3: Marco=2 (FALLO) | Paso 4: Dir.Fisica=08256
+[t=008] PID 1 (P1) | Dir.Virtual=08256 -> Paso 1: Pag=2 | Paso 2: Offset=0064 | Paso 3: Marco=3 (ACIERTO) | Paso 4: Dir.Fisica=12352
+[t=009] PID 1 (P1) | Dir.Virtual=12352 -> Paso 1: Pag=3 | Paso 2: Offset=0064 | Paso 3: Marco=0 (ACIERTO) | Paso 4: Dir.Fisica=00064
+[t=010] PID 1 (P1) | Dir.Virtual=00064 -> Paso 1: Pag=0 | Paso 2: Offset=0064 | Paso 3: Marco=1 (ACIERTO) | Paso 4: Dir.Fisica=04160
+[t=011] PID 1 (P1) | Dir.Virtual=12352 -> Paso 1: Pag=3 | Paso 2: Offset=0064 | Paso 3: Marco=0 (ACIERTO) | Paso 4: Dir.Fisica=00064
+[t=012] PID 1 (P1) | Dir.Virtual=08256 -> Paso 1: Pag=2 | Paso 2: Offset=0064 | Paso 3: Marco=3 (ACIERTO) | Paso 4: Dir.Fisica=12352
+[t=013] PID 1 (P1) | Dir.Virtual=04160 -> Paso 1: Pag=1 | Paso 2: Offset=0064 | Paso 3: Marco=2 (FALLO) | Paso 4: Dir.Fisica=08256
+[t=014] PID 1 (P1) | Dir.Virtual=08256 -> Paso 1: Pag=2 | Paso 2: Offset=0064 | Paso 3: Marco=3 (ACIERTO) | Paso 4: Dir.Fisica=12352
+[t=015] PID 1 (P1) | Dir.Virtual=00064 -> Paso 1: Pag=0 | Paso 2: Offset=0064 | Paso 3: Marco=1 (ACIERTO) | Paso 4: Dir.Fisica=04160
+[t=016] PID 1 (P1) | Dir.Virtual=04160 -> Paso 1: Pag=1 | Paso 2: Offset=0064 | Paso 3: Marco=2 (ACIERTO) | Paso 4: Dir.Fisica=08256
+[t=017] PID 1 (P1) | Dir.Virtual=28736 -> Paso 1: Pag=7 | Paso 2: Offset=0064 | Paso 3: Marco=0 (FALLO) | Paso 4: Dir.Fisica=00064
+[t=018] PID 1 (P1) | Dir.Virtual=00064 -> Paso 1: Pag=0 | Paso 2: Offset=0064 | Paso 3: Marco=1 (ACIERTO) | Paso 4: Dir.Fisica=04160
+[t=019] PID 1 (P1) | Dir.Virtual=04160 -> Paso 1: Pag=1 | Paso 2: Offset=0064 | Paso 3: Marco=2 (ACIERTO) | Paso 4: Dir.Fisica=08256
+[t=021] PID 2 (P2) | Dir.Virtual=00010 -> Paso 1: Pag=0 | Paso 2: Offset=0010 | Paso 3: Marco=0 (FALLO) | Paso 4: Dir.Fisica=00010
+[t=022] PID 2 (P2) | Dir.Virtual=04116 -> Paso 1: Pag=1 | Paso 2: Offset=0020 | Paso 3: Marco=1 (FALLO) | Paso 4: Dir.Fisica=04116
+[t=024] PID 3 (P3) | Dir.Virtual=00015 -> Paso 1: Pag=0 | Paso 2: Offset=0015 | Paso 3: Marco=0 (FALLO) | Paso 4: Dir.Fisica=00015
+[t=025] PID 3 (P3) | Dir.Virtual=04121 -> Paso 1: Pag=1 | Paso 2: Offset=0025 | Paso 3: Marco=1 (FALLO) | Paso 4: Dir.Fisica=04121
+[t=026] PID 3 (P3) | Dir.Virtual=00035 -> Paso 1: Pag=0 | Paso 2: Offset=0035 | Paso 3: Marco=0 (ACIERTO) | Paso 4: Dir.Fisica=00035
+[t=028] PID 4 (P4) | Dir.Virtual=00050 -> Paso 1: Pag=0 | Paso 2: Offset=0050 | Paso 3: Marco=0 (FALLO) | Paso 4: Dir.Fisica=00050
+[t=030] PID 5 (P5) | Dir.Virtual=00040 -> Paso 1: Pag=0 | Paso 2: Offset=0040 | Paso 3: Marco=0 (FALLO) | Paso 4: Dir.Fisica=00040
+[t=031] PID 5 (P5) | Dir.Virtual=04156 -> Paso 1: Pag=1 | Paso 2: Offset=0060 | Paso 3: Marco=1 (FALLO) | Paso 4: Dir.Fisica=04156

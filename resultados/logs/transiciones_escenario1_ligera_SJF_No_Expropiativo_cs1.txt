@@ -1,0 +1,21 @@
+=== LOG DE TRANSICIONES: SJF (No Expropiativo) (Escenario 1: Carga Ligera) ===
+Costo de cambio de contexto: 1 ticks | Tiempo total: 21 ticks
+
+[t=000] PID 1 (P1): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=000] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=001] PID 2 (P2): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=002] PID 3 (P3): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=003] PID 1 (P1): EJECUCION -> BLOQUEADO | Motivo: Solicitud de operación de E/S
+[t=004] PID 3 (P3): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=004] PID 4 (P4): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=004] PID 1 (P1): BLOQUEADO -> LISTO | Motivo: Fin de operación de E/S
+[t=006] PID 3 (P3): EJECUCION -> BLOQUEADO | Motivo: Solicitud de operación de E/S
+[t=006] PID 3 (P3): BLOQUEADO -> LISTO | Motivo: Fin de operación de E/S
+[t=007] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=009] PID 1 (P1): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=010] PID 3 (P3): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=012] PID 3 (P3): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=013] PID 4 (P4): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=016] PID 4 (P4): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=017] PID 2 (P2): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=021] PID 2 (P2): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas

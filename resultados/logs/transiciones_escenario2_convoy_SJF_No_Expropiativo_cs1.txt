@@ -1,0 +1,18 @@
+=== LOG DE TRANSICIONES: SJF (No Expropiativo) (Escenario 2: Carga Mixta (Efecto Convoy)) ===
+Costo de cambio de contexto: 1 ticks | Tiempo total: 32 ticks
+
+[t=000] PID 1 (P1): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=000] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=001] PID 2 (P2): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=002] PID 3 (P3): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=003] PID 4 (P4): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=004] PID 5 (P5): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=020] PID 1 (P1): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=021] PID 4 (P4): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=022] PID 4 (P4): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=023] PID 2 (P2): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=025] PID 2 (P2): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=026] PID 5 (P5): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=028] PID 5 (P5): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=029] PID 3 (P3): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=032] PID 3 (P3): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas

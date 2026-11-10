@@ -1,0 +1,31 @@
+=== LOG DE TRANSICIONES: Round Robin (Q=8) (Escenario 3: Alta Concurrencia y Sensibilidad al Quantum) ===
+Costo de cambio de contexto: 1 ticks | Tiempo total: 59 ticks
+
+[t=000] PID 1 (P1): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=000] PID 1 (P1): LISTO -> EJECUCION | Motivo: CPU asignada (despacho inicial/continuación)
+[t=001] PID 2 (P2): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=002] PID 3 (P3): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=003] PID 4 (P4): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=005] PID 5 (P5): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=006] PID 6 (P6): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=008] PID 1 (P1): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=008] PID 7 (P7): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=009] PID 2 (P2): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=009] PID 8 (P8): NUEVO -> LISTO | Motivo: Llegada al sistema
+[t=013] PID 2 (P2): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=014] PID 3 (P3): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=022] PID 3 (P3): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=8)
+[t=023] PID 4 (P4): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=026] PID 4 (P4): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=027] PID 5 (P5): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=033] PID 5 (P5): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=034] PID 6 (P6): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=036] PID 6 (P6): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=037] PID 7 (P7): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=045] PID 7 (P7): EJECUCION -> LISTO | Motivo: Expiración de quantum (Q=8)
+[t=046] PID 8 (P8): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=051] PID 8 (P8): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=052] PID 3 (P3): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=056] PID 3 (P3): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas
+[t=057] PID 7 (P7): LISTO -> EJECUCION | Motivo: CPU asignada tras cambio de contexto
+[t=059] PID 7 (P7): EJECUCION -> FINALIZADO | Motivo: Todas las ráfagas completadas

@@ -1,0 +1,7 @@
+Estrategia,Total_Accesos,Total_Aciertos,Total_Fallos,Total_Reemplazos,Hit_Rate_HR (%),Page_Fault_Rate_PFR (%),Fragmentacion_Externa_Bytes,Fragmentacion_Interna_Total_Bytes,Num_Marcos_RAM,Tamano_Pagina_Bytes,Escenario
+FIFO,16,10,6,0,62.5,37.5,0,3980,8,4096,escenario1_ligera
+LRU,16,10,6,0,62.5,37.5,0,3980,8,4096,escenario1_ligera
+FIFO,28,11,17,6,39.29,60.71,0,10536,4,4096,escenario2_convoy
+LRU,28,13,15,4,46.43,53.57,0,10536,4,4096,escenario2_convoy
+FIFO,50,21,29,9,42.0,58.0,0,16592,8,4096,escenario3_quantum
+LRU,50,21,29,9,42.0,58.0,0,16592,8,4096,escenario3_quantum

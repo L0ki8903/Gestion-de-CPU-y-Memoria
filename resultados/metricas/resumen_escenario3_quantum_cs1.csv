@@ -1,0 +1,6 @@
+Algoritmo,Costo_CS,Procesos,Promedio_TAT,Promedio_WT,Promedio_RT,Total_CS,DesvStd_WT (Equidad),Casos_Inanicion
+FCFS,1,8,28.5,22.25,22.25,7,13.52,4
+SJF (No Expropiativo),1,8,22.5,16.25,16.25,7,13.02,1
+Round Robin (Q=2),1,8,45.38,39.12,9.62,25,16.1,7
+Round Robin (Q=4),1,8,34.62,28.38,14.75,14,15.83,5
+Round Robin (Q=8),1,8,31.0,24.75,19.5,9,14.34,4
